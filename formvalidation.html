@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration form</title>
+    <link rel="stylesheet" href="form.css">
+</head>
+
+<body>
+    <section id="form">
+        <h2 style="font-family: sans-serif; color: rgb(249, 255, 255); font-weight: bolder;">Form Validation</h2>
+        <form id="coform" action="page.html" method="get" name="coform" onsubmit="return valid()" onreset="res()">
+            <div class="formcon">
+                <div><label name="name">Name</label>
+                    <input type="text" value="" id="uname" name="uname" placeholder="enter your name">
+                    <span id="nameerror"></span>
+                </div><br>
+                <div><label name="email">Email</label>
+                    <input type="text" value="" id="mail" placeholder="enter your mail">
+                    <span id="mailerror"></span>
+                </div><br>
+                <div><label name="password">Password</label>
+                    <input type="password" value="" id="pass">
+                    <span style id="passerror"></span>
+                </div><br>
+                <div class="btn">
+                    <button type="reset">Reset</button>
+                    <button type="submit" id="sbtn">Submit</button>
+                </div>
+            </div>
+        </form>
+    </section>
+    <script src="form.js"></script>
+</body>
+
+</html>

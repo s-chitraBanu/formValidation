@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(bg.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-top: 10%;
+    min-height: 100vh;
+    width: 100%;
+    align-items: center;
+    padding: 20px;
+}
+
+.formcon {
+    border: solid rgb(247, 247, 247) 2px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#coform .formcon input {
+    display: flex;
+    padding: 10px;
+    width: 50vh;
+    border: none;
+    border-bottom: solid rgba(204, 182, 182, 0.644) 2px;
+    background-color: transparent;
+    color: aliceblue;
+}
+
+.coform .formcon input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+#coform .formcon input:focus {
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.formcon div label{
+    color: white;
+}
+
+#coform .formcon button {
+    padding: 5px;
+    font-weight: bold;
+    border: solid rgb(255, 255, 255) 2px;
+    border-radius: 30px;
+    background-color: transparent;
+}
+
+.btn button{
+    color: white;
+}
+
+.btn button:hover{
+    color: yellowgreen;
+}
+
+@media screen and (max-width:700px){
+    #form{
+        height:500px;
+    }
+}
